@@ -16,6 +16,7 @@ import MedicineShop from './pages/MedicineShop';
 import Orders from './pages/Orders';
 import AIHealthAssistant from './pages/AIHealthAssistant';
 import PaymentPage from './pages/PaymentPage';
+import VideoCall from './pages/VideoCall';
 import FloatingChatbot from './components/FloatingChatbot';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="/medicines" element={<MedicineShop />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/video-call" element={<VideoCall />} />
           
           {/* AI Chatbot Route */}
           <Route path="/ai-assistant" element={<AIHealthAssistant />} />

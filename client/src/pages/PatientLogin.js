@@ -93,13 +93,6 @@ function PatientLogin() {
             </Link>
           </p>
           
-          <div style={{ marginTop: '30px', padding: '15px', backgroundColor: '#f8f9fa', borderRadius: '4px' }}>
-            <p style={{ fontSize: '14px', margin: 0, fontWeight: 'bold' }}>Test Credentials:</p>
-            <p style={{ fontSize: '13px', margin: '5px 0' }}>
-              Email: john.smith@email.com<br />
-              Password: patient123
-            </p>
-          </div>
         </div>
       </div>
     </div>

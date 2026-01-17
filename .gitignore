@@ -22,6 +22,12 @@ server/.project
 server/.settings/
 server/bin/
 
+# Signaling server (Node)
+signaling-server/node_modules/
+signaling-server/npm-debug.log*
+signaling-server/yarn-debug.log*
+signaling-server/yarn-error.log*
+
 # OS Files
 .DS_Store
 Thumbs.db

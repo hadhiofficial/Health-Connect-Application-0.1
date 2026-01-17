@@ -1,9 +1,10 @@
 package com.healthconnect.model;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
 import java.util.List;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "payments")
 public class Payment {
@@ -100,6 +101,13 @@ public class Payment {
 
     public String getInvoiceUrl() { return invoiceUrl; }
     public void setInvoiceUrl(String invoiceUrl) { this.invoiceUrl = invoiceUrl; }
+
+    // Alias methods for backward compatibility
+    public String getStatus() { return paymentStatus; }
+    public void setStatus(String status) { setPaymentStatus(status); }
+    
+    public String getRazorpayOrderId() { return orderId; }
+    public void setRazorpayOrderId(String razorpayOrderId) { this.orderId = razorpayOrderId; }
 
     // Inner classes
     public static class PaymentItem {
